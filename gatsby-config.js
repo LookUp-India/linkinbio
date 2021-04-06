@@ -34,6 +34,7 @@ module.exports = {
         icon: config.logo, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-instagram`,

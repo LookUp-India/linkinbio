@@ -26,8 +26,9 @@ const ImageGallery = () => {
             caption
             localFile {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 1000, quality: 100) {
                   ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
                 }
               }
             }
@@ -75,7 +76,7 @@ const ImageGallery = () => {
       // 1 column for small devices
       // 2 columns for medium devices
       // 3 columns for large devices
-      flexGridColumnCount={[1, 2, 3]}
+      flexGridColumnCount={[3, 4, 5]}
       flexGridColumnGap={['scale0', 'scale200']}
       flexGridRowGap={['scale0', 'scale200']}
     >
