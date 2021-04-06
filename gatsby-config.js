@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         // type: `user-profile`,
-        username: config.social.instagram,
+        username: 44536886918,
       },
     },
     // Optional: Google Analytics Tracking

@@ -44,9 +44,19 @@ const ImageGallery = () => {
         caption,
         localFile: { childImageSharp },
       } = node;
+      var urlMatches=caption.match(/\bhttp?:\/\/\S+/gi);
+
+      var link="";
+      if(urlMatches==null){
+        link=nodeURL+"/"+id;
+      }
+      else{
+        link=urlMatches[0];
+      }
+     
       return (
         <FlexGridItem key={id} flexGridItemIndex={id}>
-          <a href={`${nodeURL}/${id}`}>
+          <a href={`${link}`} target="_blank">
             <Image
               loading="lazy"
               alt={caption || ''}

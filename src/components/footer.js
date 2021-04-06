@@ -16,8 +16,7 @@ const Footer = () => {
           },
         }}
       >
-        Copyright © {new Date().getFullYear()}{' '}
-        <Link href="#">{legalName}</Link> — Made by{' '}
+        Made by{' '}
         <SocialLink href={authorUrl}>{author}</SocialLink>
       </Paragraph1>
     </footer>
