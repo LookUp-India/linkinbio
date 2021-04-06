@@ -2,8 +2,7 @@ module.exports = {
   // Name of your site. Can be the name of a brand, or your personal name.
   title: 'LookUp India',
   // What's the purpose of this website? What can we expect from it?
-  description:
-    `An alternative to Linkinbio, built using Gatsby`,
+  description: `An alternative to Linkinbio, built using Gatsby`,
   // Your legal name.
   legalName: 'LookUp India',
   // URL to this website. If you bought `www.domain.com`, then it will be `www.domain.com`.
@@ -16,9 +15,9 @@ module.exports = {
   authorUrl: 'https://lookup.live',
   // Your social media presence, in the form of usernames.
   social: {
-    // tells the Instagram API the username to get posts from. 
+    // tells the Instagram API the username to get posts from.
     // If the url is `https://www.instagram.com/natgeotravel`, your username is `natgeotravel`.
-    instagram: 'lookup.india', 
+    instagram: 'lookup.india',
     // Optional
     twitter: '@lookup_india',
   },

@@ -1,7 +1,7 @@
 import { useStyletron } from 'baseui';
 import * as React from 'react';
 
-const Link = props => {
+const Link = (props) => {
   const { children } = props;
   const [css, theme] = useStyletron();
   const decor = css({

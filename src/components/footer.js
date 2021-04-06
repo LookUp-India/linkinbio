@@ -16,8 +16,7 @@ const Footer = () => {
           },
         }}
       >
-        Made by{' '}
-        <SocialLink href={authorUrl}>{author}</SocialLink>
+        Made by <SocialLink href={authorUrl}>{author}</SocialLink>
       </Paragraph1>
     </footer>
   );

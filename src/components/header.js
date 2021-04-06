@@ -28,9 +28,7 @@ const Header = ({ siteTitle }) => (
     </StyledNavigationList>
     <StyledNavigationList $align={ALIGN.right}>
       <StyledNavigationItem>
-        <SocialLink href={config.socialLinks.instagram}>
-          Instagram
-        </SocialLink>
+        <SocialLink href={config.socialLinks.instagram}>Instagram</SocialLink>
       </StyledNavigationItem>
       <StyledNavigationItem>
         <Link href={`mailto:${config.contact.email}`}>
