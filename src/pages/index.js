@@ -4,7 +4,7 @@ import { Provider as StyletronProvider } from 'styletron-react';
 import App from 'components/app';
 import Theme from 'theme';
 
-export default () => {
+const Index = () => {
   const [engine, setEngine] = React.useState(null);
 
   React.useEffect(() => {
@@ -28,3 +28,4 @@ export default () => {
     </StyletronProvider>
   );
 };
+export default Index;

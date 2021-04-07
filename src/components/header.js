@@ -5,8 +5,10 @@ import {
   StyledNavigationItem,
   StyledNavigationList,
 } from 'baseui/header-navigation';
+import { graphql, useStaticQuery } from 'gatsby';
 import * as React from 'react';
 import Link from 'common/link';
+import { StaticImage } from 'gatsby-plugin-image';
 import SocialLink from 'common/socialLink';
 
 const config = require('data/config');
@@ -23,7 +25,13 @@ const Header = ({ siteTitle }) => (
   >
     <StyledNavigationList $align={ALIGN.left}>
       <StyledNavigationItem>
-        <Link href="/">{siteTitle}</Link>
+        <Link href="/">
+          <StaticImage
+            placeholder="blurred"
+            src="../../static/images/titleLogo.png"
+            height={70}
+          />
+        </Link>
       </StyledNavigationItem>
     </StyledNavigationList>
     <StyledNavigationList $align={ALIGN.right}>
