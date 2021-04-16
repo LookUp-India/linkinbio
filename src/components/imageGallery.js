@@ -45,7 +45,7 @@ const ImageGallery = () => {
         caption,
         localFile: { childImageSharp },
       } = node;
-      var urlMatches = caption.match(/\bhttp?:\/\/\S+/gi);
+      var urlMatches = caption.match(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi);
 
       var link = '';
       if (urlMatches == null) {
