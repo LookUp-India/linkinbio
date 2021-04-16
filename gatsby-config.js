@@ -1,4 +1,7 @@
 const config = require('./data/config');
+require("dotenv").config({
+  path:`.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -37,10 +40,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-offline`,
     {
+
       resolve: `gatsby-source-instagram`,
       options: {
         // type: `user-profile`,
-        username: 44536886918,
+        username: process.env.INSTAGRAM_USERNAME,
+        access_token:`${process.env.INSTA_ACCESS_TOKEN}`,
+        instagram_id:process.env.INSTAGRAM_BUSINESS_ID,
       },
     },
     // Optional: Google Analytics Tracking
